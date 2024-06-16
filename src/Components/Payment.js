@@ -23,7 +23,7 @@ function Payment({NextClickHandler}){
         const FetchPaymentData = async () => {
             try{
 
-                const PaymentResponse = await axios.get('http://localhost:4000/fetch-paymentData');
+                const PaymentResponse = await axios.get('/api/fetch-paymentData');
                 const responseData = PaymentResponse.data.data;
                 // console.log(responseData,"responseData")
                 const StringArray = responseData.map(val => val.data.content);

@@ -15,7 +15,7 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 
-app.get('/fetch-data', (req, res) => {
+app.get('/api/fetch-data', (req, res) => {
 
   axios.get(`https://api.miro.com/v2/boards/uXjVKFzLB5o%3D/items?parent_item_id=3458764589692842176&type=text`, {
     headers: {
@@ -49,7 +49,7 @@ app.get('/fetch-data', (req, res) => {
   });
 });  
 
-app.get ('/fetch-paymentData', (req, res) => {
+app.get ('/api/fetch-paymentData', (req, res) => {
 
   axios.get(`https://api.miro.com/v2/boards/uXjVKFzLB5o%3D/items?parent_item_id=3458764590110643500&type=text`,{
     headers: {

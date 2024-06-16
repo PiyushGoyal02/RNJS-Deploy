@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/fetch-data');
+        const response = await axios.get('/api/fetch-data');
         const value = response.data.data;
         const content = value.map(i => i.data.content);
         setContentArray(content.map(extractValue));

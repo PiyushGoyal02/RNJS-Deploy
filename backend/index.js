@@ -83,7 +83,7 @@ app.get ('/api/fetch-paymentData', (req, res) => {
 })
 
 app.get("/", (req, res) => {
-    res.send("Default Route Starting");
+    res.send("Hey Guys Kya Hal Hai I Am Default Route");
 });
 
 app.listen(PORT, () => {
